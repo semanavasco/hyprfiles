@@ -1,5 +1,8 @@
 # Arch Linux x Hyprland Dotfiles
 
+> *No hate please, this is my first ever Arch Linux x Hyprland rice. But I have been tweaking it for quite some time now.*
+> *I decided to make these files publicly available to (maybe) get some feedback from experienced ricers. But also because I got tired of storing them in a USB Drive.*
+
 ## `🖼️` Preview :
 > *Need to take some screenshots.*
 
@@ -42,3 +45,10 @@
 >   ```
 > 
 > *These requirements are needed if you want an identical setup, feel free to install the ones you need and to edit the config files accordingly.*
+
+## `📋` To-Do :
+> - Replace every python script for rofi with bash or C scripts.
+> - Improve the Fan Menu : add a tooltip, send notifications on mode change, add a custom mode (set fan speed manually).
+> - Improve the WiFi Menu : manage IP address, mask, etc. + detect when using an ethernet connection and display a different menu if that is the case.
+> - Replace waypaper with rofi.
+> - Add an emoji picker rofi menu.
