@@ -36,7 +36,7 @@
 >   asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 >   asdf install nodejs latest
 >   ```
-> FiraCode Nerd Font :
+> - FiraCode Nerd Font :
 >   ```bash
 >   oh-my-posh font install FiraCode
 >   ```
