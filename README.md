@@ -1,6 +1,7 @@
 # Arch Linux x Hyprland Dotfiles
 
-> _No hate please, this is my first ever Arch Linux x Hyprland rice. But I have been tweaking it for quite some time now._ > _I decided to make these files publicly available to (maybe) get some feedback from experienced ricers. But also because I got tired of storing them in a USB Drive._
+> _No hate please, this is my first ever Arch Linux x Hyprland rice. But I have been tweaking it for quite some time now._ 
+> _I decided to make these files publicly available to (maybe) get some feedback from experienced ricers. But also because I got tired of storing them in a USB Drive._
 
 ## `🖼️` Preview :
 
