@@ -4,7 +4,13 @@
 > *I decided to make these files publicly available to (maybe) get some feedback from experienced ricers. But also because I got tired of storing them in a USB Drive.*
 
 ## `🖼️` Preview :
-> *Need to take some screenshots.*
+![Firefox and Terminal](./firefox-and-terminal.png)
+![Terminal](./terminal.png)
+![Neovim](./neovim.png)
+![Fan Menu](./fan-menu.png)
+![Power Menu](./power-menu.png)
+![Rofi Menu](./rofi-menu.png)
+![WiFi Menu](./wifi-menu.png)
 
 ## `📦` Requirements :
 > 1. **Pacman :**
