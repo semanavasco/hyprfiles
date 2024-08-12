@@ -7,9 +7,9 @@
 ![Firefox and Terminal](./images/firefox-and-terminal.png)
 ![Terminal](./images/terminal.png)
 ![Neovim](./images/neovim.png)
+![Rofi Menu](./images/rofi-menu.png)
 ![Fan Menu](./images/fan-menu.png)
 ![Power Menu](./images/power-menu.png)
-![Rofi Menu](./images/rofi-menu.png)
 ![WiFi Menu](./images/wifi-menu.png)
 
 ## `📦` Requirements :
