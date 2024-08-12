@@ -1,0 +1,175 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 0,
+/*
+ ██████╗ ██████╗ ██████╗ ███████╗██████╗ 
+██╔═══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+██║   ██║██████╔╝██║  ██║█████╗  ██████╔╝
+██║   ██║██╔══██╗██║  ██║██╔══╝  ██╔══██╗
+╚██████╔╝██║  ██║██████╔╝███████╗██║  ██║
+ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+*/
+  "modules-left": [
+    "custom/appmenu",
+    "power-profiles-daemon",
+    "custom/fan",
+    "temperature",
+    "cpu",
+    "memory"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "clock",
+    "custom/power"
+  ],
+/*
+███╗   ███╗ ██████╗ ██████╗ ██╗   ██╗██╗     ███████╗███████╗
+████╗ ████║██╔═══██╗██╔══██╗██║   ██║██║     ██╔════╝██╔════╝
+██╔████╔██║██║   ██║██║  ██║██║   ██║██║     █████╗  ███████╗
+██║╚██╔╝██║██║   ██║██║  ██║██║   ██║██║     ██╔══╝  ╚════██║
+██║ ╚═╝ ██║╚██████╔╝██████╔╝╚██████╔╝███████╗███████╗███████║
+╚═╝     ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝
+*/
+  "network": {
+    "format-ethernet": "󰈀",
+    "format-wifi": "󰤨",
+    "format-disconnected": "󰤭",
+    "tooltip-format-disconnected": "Not connected.",
+    "tooltip-format-ethernet": "Connected to {ifname}\n\n {bandwidthUpBytes} /  {bandwidthDownBytes}",
+    "tooltip-format-wifi": "Connected to {essid}\n\n {bandwidthUpBytes} /  {bandwidthDownBytes}",
+    "on-click": "python $HOME/.config/rofi/modes/wifimenu/run.py"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-no-controller": "",
+    "format-disabled": "󰂲",
+    "format-off": "󰂲",
+    "format-on": "",
+    "format-connected": "",
+    "tooltip-format": "Unknown Bluetooth error.",
+    "tooltip-format-no-controller": "  Remember to install dependencies :\n\n- blueman\n- bluez",
+    "tooltip-format-disabled": "󰂲 Bluetooth controller is disabled.",
+    "tooltip-format-off": "󰂲 Bluetooth is turned off.",
+    "tooltip-format-on": "󰂰 Bluetooth on and waiting to pair.",
+    "tooltip-format-connected": "󰂰 Connected to {num_connections} device(s) :\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "- {device_alias}",
+    "tooltip-format-enumerate-connected-battery": "- {device_alias} with {device_battery_percentage}% {icon}",
+    "format-icons": [" ", " ", " ", " ", " "],
+    "on-click": "blueman-manager"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  "custom/power": {
+    "tooltip-format": "[󰣇 + L] Lock\nLogout\nShutdown\nReboot",
+    "format": "⏻",
+    "on-click": "python $HOME/.config/rofi/modes/powermenu/run.py",
+    "signal": 8
+  },
+  "custom/fan": {
+    "format": "",
+    "on-click": "python $HOME/.config/rofi/modes/fanmenu/run.py",
+    "signal": 8,
+  },
+  "cpu": {
+    "format": "  {usage}%",
+  },
+  "memory": {
+    "format": "  {}%"
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": ["", "", ""]
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "default": "󰄰",
+      "active": "󰻃",
+    },
+  },
+  "custom/appmenu": {
+    "format": "󰣇",
+    "on-click": "rofi -show drun",
+    "signal": 8
+  },
+  "clock": {
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode"          : "month",
+      "on-scroll"     : 1,
+      "format": {
+        "days":       "<span color='#FFFFFF'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#CBA6F7'><b>{}</b></span>",
+        "today":      "<span color='#CBA6F7'><b><u>{}</u></b></span>"
+      }
+    },
+    "format": " <b>{:%H:%M}</b>",
+    "format-alt": " {:%d/%m/%Y |  %H:%M}"
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃝", "󰃠"],
+    "scroll-step": 5
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [" ", " ", " ", " ", " "],
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "on-click": "pamixer -t",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" ", " ", " "]
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " ",
+    "on-click": "pamixer --default-source -t",
+    "on-scroll-up": "pamixer --default-source -i 5",
+    "on-scroll-down": "pamixer --default-source -d 5",
+    "scroll-step": 5 
+  }
+}

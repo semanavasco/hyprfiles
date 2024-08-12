@@ -1,0 +1,8 @@
+configuration {
+  disable-history:                true;
+  click-to-exit: 		              true;
+  case-sensitive:                 false;
+  location:                       0;
+}
+
+@theme "theme"

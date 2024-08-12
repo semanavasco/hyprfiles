@@ -1,0 +1,61 @@
+* {
+    font:             "FiraCode Nerd Font 14";
+    bg-normal:        #24273A;
+    fg-normal:        #CBA6F7;
+    bg-selected:      #CBA6F7;
+    fg-selected:      #24273A;
+    background-color: var(bg-normal);
+    text-color:       var(fg-normal);
+}
+window {
+    location: north east; 
+    x-offset: -5px;
+    y-offset: 5px;
+    width:            475px;
+    height:           250px;
+    padding:          10px;
+    border:           2px;
+    border-color:     var(fg-normal);
+    border-radius:    10px;
+}
+element {
+    border:           0;
+    border-radius:    5;
+}
+element selected {
+    background-color: var(bg-selected);
+    text-color:       var(fg-selected);
+}
+element-text {
+    padding:          5px;
+    vertical-align:   0.5;
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+textbox {
+    border-radius:    10px;
+}
+listview {
+    flow:             vertical;
+    columns:          1;
+    scrollbar:        false;
+}
+inputbar {
+  margin:             0px 0px 10px 0px;
+}
+prompt {
+  background-color:   var(bg-selected);
+  text-color:         var(fg-selected);
+  padding:            5px;
+  margin:             0px 10px 0px 0px;
+  border-radius:      5px;
+}
+entry {
+  padding:            5px;
+  cursor:             text;
+  spacing:            0;
+  placeholder-color:  var(fg-normal);
+  placeholder:        "Type to Search...";
+}

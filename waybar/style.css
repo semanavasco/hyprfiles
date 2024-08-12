@@ -1,0 +1,120 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Fira code Nerd Font;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window {
+  background: transparent;
+  color: #cba6f7;
+}
+
+tooltip {
+  background: transparent;
+  border: 2px solid #cba6f7;
+  border-radius: 10px;
+}
+
+#custom-fan,
+#custom-power,
+#custom-appmenu,
+#network,
+#power-profiles-daemon,
+#bluetooth,
+#clock,
+#battery,
+#pulseaudio,
+#tray,
+#backlight,
+#cpu,
+#memory,
+#temperature {
+  color: #cba6f7;
+  background: #24273a;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border: 2px solid #cba6f7;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#tray,
+#backlight,
+#cpu,
+#memory,
+#temperature {
+  padding: 0px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#bluetooth {
+  padding: 0px 15px 0px 12px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#custom-fan,
+#network,
+#power-profiles-daemon {
+  padding: 0px 15px 0px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#custom-appmenu {
+  padding: 0px 15px 0px 12px;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+#custom-power {
+  padding: 0px 15px 0px 12px;
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+/* Workspace Style - Start */
+#workspaces {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+tooltip,
+#workspaces {
+  color: #cba6f7;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: #24273a;
+  border: 2px solid #cba6f7;
+  padding: 3px;
+}
+#workspaces button {
+  padding: 2px 8px 2px 8px;
+  color: #cba6f7;
+}
+#workspaces button.active {
+  color: #181825;
+  border-radius: 7px;
+  background-color: #cba6f7;
+}
+#workspaces button.focused {
+  color: #cba6f7;
+  border-radius: 7px;
+}
+#workspaces button.urgent {
+  color: #5bcae3;
+  border-radius: 7px;
+}
+#workspaces button:hover {
+  color: #cba6f7;
+  border-radius: 7px;
+}
+/* Workspace Style - End */
