@@ -18,7 +18,7 @@
 > 1. **Pacman :**
 >
 > ```bash
-> sudo pacman -S firefox thunar gvfs lazygit fzf ripgrep pamixer unzip dotnet-runtime dotnet-sdk dunst wl-clipboard wev swww brightnessctl power-profiles-daemon ruby zsh hyprlock waybar neofetch nwg-look neovim curl git cliphist pavucontrol github-cli bluez bluez-utils blueman
+> sudo pacman -S firefox thunar gvfs lazygit fzf ripgrep pamixer unzip dotnet-runtime dotnet-sdk dunst wl-clipboard wev swww brightnessctl power-profiles-daemon ruby zsh hyprlock waybar neofetch nwg-look neovim curl git cliphist pavucontrol github-cli bluez bluez-utils blueman rofi-wayland
 > ```
 >
 > ```bash
