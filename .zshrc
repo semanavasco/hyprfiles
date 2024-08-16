@@ -8,7 +8,7 @@ source $ZSH/oh-my-zsh.sh
 . "$HOME/.asdf/asdf.sh"
 
 export PATH=$PATH:/home/svasco/.spicetify
-export PATH=$PATH:/home/svasco/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:$(ruby -e 'puts Gem.user_dir')/bin
 
 if [ -x "$(command -v colorls)" ]; then
     alias ls="colorls"
